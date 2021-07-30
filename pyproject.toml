@@ -32,6 +32,11 @@ exclude = '''
 )
 '''
 
+[tool.isort]
+include_trailing_comma = true
+line_length = 120
+multi_line_output = 5
+
 [tool.mypy]
 python_version = '3.9'
 warn_return_any = true
