@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "renban"
+version = "0.0.1"
+description = ""
+authors = ["Yuya Oka <nnsnodnb@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nnsnodnb/renban-python"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.0.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.7b0"
+flake8 = "^3.9.2"
+mypy = "^0.910"
+isort = "^5.9.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
