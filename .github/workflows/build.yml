@@ -31,3 +31,9 @@ jobs:
 
       - name: Build binary
         run: poetry run pyinstaller renban/renban.py --onefile --noconsole --windowed
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist-binary
+          path: dist
