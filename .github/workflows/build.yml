@@ -30,4 +30,4 @@ jobs:
           poetry install --no-root
 
       - name: Build binary
-        run: poetry run pyinstaller renban/renban.py --onefile --noconsole
+        run: poetry run pyinstaller renban/renban.py --onefile --noconsole --windowed
