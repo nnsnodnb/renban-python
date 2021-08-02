@@ -36,6 +36,14 @@ jobs:
       - name: Build binary
         run: poetry run pyinstaller renban/renban.py --onefile --noconsole
 
+      - name: Add execution permission
+        if: ${{ matrix.os != 'windows-latest' }}
+        run: chmod +x ./dist/renban
+
+      - name: Remove renban.app for macOS
+        if: ${{ matrix.os == 'macos-latest' }}
+        run: rm -rf ./dist/renban.app
+
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
