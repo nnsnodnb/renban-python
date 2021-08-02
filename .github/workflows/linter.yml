@@ -1,6 +1,6 @@
 name: Linter
 
-on: [pull_request_target]
+on: [pull_request]
 
 jobs:
   black:
