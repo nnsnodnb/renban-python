@@ -30,6 +30,8 @@ def cmd(
         if verbose:
             click.echo(f"Move: {f.absolute()} -> {target.absolute()}")
 
+    return 1
+
 
 if __name__ == "__main__":
     sys.exit(cmd())
