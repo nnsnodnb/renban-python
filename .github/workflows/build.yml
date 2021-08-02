@@ -19,7 +19,7 @@ jobs:
         id: cache
         with:
           path: .venv
-          key: poetry-venv-${GITHUB_REF}-${{ hashFiles('**/poetry.lock') }}
+          key: poetry-venv-${{ hashFiles('**/poetry.lock') }}
 
       - name: Install dependencies
         run: |
