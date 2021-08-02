@@ -55,4 +55,4 @@ jobs:
           reporter: github-pr-review
           level: warning
       - run: echo "hello"
-        if: hoge
+        if: 1 == 1
