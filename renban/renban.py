@@ -6,7 +6,7 @@ import click
 
 
 @click.command()
-@click.option("--prefix", "-p", type=str, default=None)
+@click.option('--prefix', "-p", type=str, default=None)
 @click.option("--start-point", "-s", type=int, default=1)
 @click.option("--input-path", "-i", type=str, default="./")
 @click.option("--output-path", "-o", type=str, default="./outputs")
