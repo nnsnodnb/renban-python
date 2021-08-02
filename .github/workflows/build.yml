@@ -23,7 +23,7 @@ jobs:
         id: cache
         with:
           path: .venv
-          key: poetry-venv-${{ hashFiles('**/poetry.lock') }}
+          key: poetry-venv-${{ matrix.os }}-${{ hashFiles('**/poetry.lock') }}
 
       - name: Install dependencies
         run: |
